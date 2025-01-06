@@ -1,0 +1,20 @@
+{
+  "name": "gruppenr1",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^6.0.5"
+  },
+  "dependencies": {
+    "@types/d3-drag": "^3.0.7",
+    "hitbox": "^3.0.0",
+    "pocket-physics": "^11.0.0",
+    "react-motion": "^0.5.2"
+  }
+}
