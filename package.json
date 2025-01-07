@@ -14,6 +14,7 @@
   "dependencies": {
     "@types/d3-drag": "^3.0.7",
     "hitbox": "^3.0.0",
+    "matter-js": "^0.20.0",
     "pocket-physics": "^11.0.0",
     "react-motion": "^0.5.2"
   }
