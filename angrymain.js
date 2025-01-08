@@ -78,12 +78,12 @@ for (let i = 0; i < slotValues.length; i++) {
 document.body.style.backgroundColor = "#1b2b3a";
 
 // // Make the balls drop automatically (uncomment if needed)
-// setInterval(() => {
-//   const ball = Bodies.circle(centerX, 25, 10, {
-//     render: { fillStyle: "white" },
-//   }); // White balls
-//   Composite.add(world, ball);
-// }, 1000);
+setInterval(() => {
+  const ball = Bodies.circle(centerX, 25, 10, {
+    render: { fillStyle: "white" },
+  }); // White balls
+  Composite.add(world, ball);
+}, 10);
 
 //ball config
 const ballRadius = 6;
