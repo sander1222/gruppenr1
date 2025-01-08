@@ -36,8 +36,8 @@ const boundaries = [
 Composite.add(world, boundaries);
 
 // Adjust the rows
-const rows = 11;
-const pegRadius = 7;
+const rows = 10;
+const pegRadius = 8;
 const pegSpacing = 50;
 const centerX = width / 2;
 const centerY = 100;
@@ -57,7 +57,7 @@ for (let row = 0; row < rows; row++) {
 
 // Add slots for balls to land on
 const slotValues = [30, 20, 10, 1, 10, 20, 30];
-const slotHeight = 30;
+const slotHeight = 20;
 const slotWidth = 60;
 const slotSpacing = 70;
 

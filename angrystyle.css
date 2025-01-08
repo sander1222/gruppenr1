@@ -11,3 +11,10 @@ html {
 canvas {
   display: block;
 }
+
+#name {
+  position: absolute;
+  top: 20px;
+  left: 100px;
+  color: red;
+}
