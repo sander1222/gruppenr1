@@ -79,8 +79,8 @@ document.body.style.backgroundColor = "#1b2b3a";
 
 // // Make the balls drop automatically (uncomment if needed)
 setInterval(() => {
-  const ball = Bodies.circle(centerX, 25, 10, {
-    render: { fillStyle: "white" },
+  const ball = Bodies.circle(centerX, 25, 6, {
+    render: { fillStyle: "red" },
   }); // White balls
   Composite.add(world, ball);
 }, 10);
