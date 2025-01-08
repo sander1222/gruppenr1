@@ -1,3 +1,16 @@
+# Ignore everything in node_modules
+node_modules/*
+
+# Allow only the matter-js library
+!node_modules/matter-js/
+!node_modules/matter-js/**/*
+
+# Ignore unnecessary files inside matter-js
+node_modules/matter-js/test/
+node_modules/matter-js/examples/
+node_modules/matter-js/**/*.md
+node_modules/matter-js/**/*.map
+
 # Logs
 logs
 *.log
@@ -7,7 +20,7 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
+# Build output
 dist
 dist-ssr
 *.local
