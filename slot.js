@@ -119,19 +119,16 @@ window.onload = function () {
   var winnings = parseInt(credits.innerText, 10);
 
   var callback = function (payLine) {
-    // Pay lines consist of an array of symbols[], first payline being 0 → ∞
     console.log(
       payLine[0].title + " | " + payLine[1].title + " | " + payLine[2].title
     );
 
-    // If all three symbols match..
     if (
       payLine[0].title === payLine[1].title &&
       payLine[0].title === payLine[2].title
     ) {
       new Audio("audio/winner.mp3").play();
 
-      // .. payout winnings
       switch (payLine[0].title) {
         case "bell":
           winnings += 50;
@@ -157,8 +154,6 @@ window.onload = function () {
   };
 
   var container = document.getElementById("slot-machine");
-
-  //   var slot = slotMachine(container, reels, callback, options);
 
   var button = document.getElementById("play-button");
 
