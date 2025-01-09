@@ -12,6 +12,7 @@ let Y = window.innerHeight + playHeight;
 let X = window.innerWidth - PlayWidth;
 const Xrev = X / 2;
 let Yrev = Y / 2;
+let x = true;
 
 const engine = Matter.Engine.create();
 const { world } = engine;
@@ -67,17 +68,19 @@ setInterval(() => {
     friction: 1,
   });
   Composite.add(world, balls);
-  let x = Math.random();
+  let x = Math.random() * 10;
+  x = Math.round(x);
   console.log(x);
-  if (x === 1) {
+  if (x === 0) {
     crash();
   }
-}, 1000);
+}, 500);
 
 function crash() {
   engine.gravity.y = 1;
   engine.gravity.x = 0;
   spawn = false;
+  x = false;
 }
 
 function save() {
@@ -108,11 +111,13 @@ function boogi() {
 }
 
 window.addEventListener("keydown", (e) => {
-  if (e.key === " ") {
-    save();
-  }
-  if (e.key === "r" || e.key === "R") {
-    boogi();
+  if (x === true) {
+    if (e.key === " ") {
+      save();
+    }
+    if (e.key === "r" || e.key === "R") {
+      boogi();
+    }
   }
 });
 
