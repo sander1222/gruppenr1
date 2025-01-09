@@ -17,7 +17,7 @@ footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 5em;
+  height: auto;
   justify-items: center;
   align-content: end;
 }
@@ -44,6 +44,12 @@ a {
 }
 
 img {
+  border-radius: 25%;
   width: 10em;
   height: 10em;
+}
+
+#GameName {
+  font-size: larger;
+  color: black;
 }
