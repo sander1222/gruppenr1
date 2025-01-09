@@ -1,12 +1,18 @@
 const { Engine, Render, Runner, Bodies, Composite, Mouse, MouseConstraint } =
   Matter;
 
+const scoreDisplay = document.getElementById("Score");
+let score = 0;
+scoreDisplay.textContent = `Score: ${score}`;
+
 let playHeight = -100;
 let PlayWidth = 100;
 
 let spawn = true;
 let saved = false;
 let ground;
+
+document.getElementById("Lost").style.display = "none";
 
 let Y = window.innerHeight + playHeight;
 let X = window.innerWidth - PlayWidth;
@@ -71,6 +77,8 @@ setInterval(() => {
   let x = Math.random() * 10;
   x = Math.round(x);
   console.log(x);
+  score++;
+  scoreDisplay.textContent = `Score: ${score}`;
   if (x === 0) {
     crash();
   }
@@ -81,6 +89,8 @@ function crash() {
   engine.gravity.x = 0;
   spawn = false;
   x = false;
+  scoreDisplay.textContent = `Score: 0`;
+  document.getElementById("Lost").style.display = "block";
 }
 
 function save() {
@@ -110,13 +120,17 @@ function boogi() {
   }
 }
 
+let safe = false;
+
 window.addEventListener("keydown", (e) => {
   if (x === true) {
-    if (e.key === " ") {
+    if (e.key === " " && safe === false) {
       save();
+      safe = true;
     }
-    if (e.key === "r" || e.key === "R") {
+    if (e.key === "r" && safe === true) {
       boogi();
+      safe = false;
     }
   }
 });

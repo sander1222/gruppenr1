@@ -7,3 +7,35 @@
 body {
   justify-self: center;
 }
+
+#Score {
+  position: absolute;
+  left: 3em;
+  top: 0;
+  color: rgb(40, 141, 0);
+  font-size: larger;
+}
+
+#Lost {
+  position: absolute;
+  left: 35%;
+  top: 35%;
+  color: rgb(36, 128, 0);
+  background-color: rgb(37, 37, 37);
+  font-size: larger;
+  text-decoration: none;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  width: 25%;
+  height: 25%;
+  text-align: center;
+  justify-items: center;
+  align-content: center;
+}
+
+#TA {
+  background-color: green;
+  border-radius: 15%;
+  width: 8em;
+}
