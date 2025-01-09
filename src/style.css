@@ -7,14 +7,33 @@
 header {
   height: 3em;
   padding-top: 1em;
-  justify-items: center;
-  /* background-color: #000000; */
-  background-image: linear-gradient(black, rgba(255, 255, 255, 0));
+  justify-content: center;
+  background-color: #32723e;
+  /* background-image: linear-gradient(rgb(#83b644), rgba(255, 255, 255, 0)); */
+  display: flex;
+  height: 8em;
+}
+
+#miniHeader {
+  display: flex;
+  background-color: #32723e;
+  height: 2.5em;
+  border: #030303;
+  border-style: solid;
+  border-width: 1px;
+}
+
+#miniHeaderButtons {
+  display: flex;
+  background-color: #32723e;
+  justify-content: center;
+  align-items: center;
+  width: 20em;
 }
 
 footer {
   font-size: larger;
-  background-color: #000000;
+  background-color: #3a3a38;
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -38,27 +57,25 @@ a {
 #GameBox {
   margin: 2em;
   padding: 1em;
-  height: 12em;
-  width: 13em;
+  height: 15em;
+  width: 15em;
   justify-items: center;
-  border-style: solid;
-  border-color: black;
-  border-radius: 10%;
+  border-radius: 5%;
 }
 
 img {
-  border-radius: 25%;
-  width: 10em;
-  height: 10em;
+  border-radius: 5%;
+  width: 15em;
+  height: 15em;
 }
 
 #GameName {
   font-size: larger;
-  color: rgb(243, 230, 230);
+  color: rgb(0, 0, 0);
 }
 
 body {
-  background-color: #40404e;
+  background-color: #ffffff;
 }
 
 #footerText {
@@ -67,12 +84,59 @@ body {
 
 #casinoName {
   color: white;
+  position: absolute;
+  left: 350px;
+  top: 0.7em;
+  font-size: 48px;
 }
 
-#Loginbutton {
-  display: flex;
-  justify-content: end;
-  align-items: end;
+/* #Loginbutton {
   color: #40404e;
   background-color: rgb(36, 229, 36);
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  border-radius: 500;
+} */
+
+#Login {
+  color: #ffffff;
+  background-color: #32723e;
+  position: absolute;
+  top: 3em;
+  right: 60px;
+  border-radius: 5px;
+  width: 70px;
+  height: 40px;
+  transition: background-color 0.3s ease;
+}
+#Login:hover {
+  background-color: #1f4627;
+}
+
+#registerButton {
+  color: #030303;
+  background-color: #fdfa3f;
+  position: absolute;
+  top: 3em;
+  right: 150px;
+  border-radius: 5px;
+  width: 85px;
+  height: 40px;
+  transition: background-color 0.3s ease;
+}
+
+#registerButton:hover {
+  background-color: #b6b42f;
+}
+#slotsButton {
+  height: 2.5em;
+  width: 6em;
+  transition: background-color 0.3s ease;
+  background-color: #32723e;
+  color: white;
+}
+
+#slotsButton:hover {
+  background-color: #1f4627;
 }
