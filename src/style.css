@@ -8,18 +8,20 @@ header {
   height: 3em;
   padding-top: 1em;
   justify-items: center;
-  background-color: gray;
+  /* background-color: #000000; */
+  background-image: linear-gradient(black, rgba(255, 255, 255, 0));
 }
 
 footer {
   font-size: larger;
-  background-color: gray;
+  background-color: #000000;
   position: absolute;
   bottom: 0;
   width: 100%;
   height: auto;
   justify-items: center;
   align-content: end;
+  display: flex;
 }
 
 a {
@@ -30,10 +32,11 @@ a {
   display: flex;
   margin-left: 2em;
   margin-right: 2em;
+  justify-content: center;
 }
 
 #GameBox {
-  margin: 1em;
+  margin: 2em;
   padding: 1em;
   height: 12em;
   width: 13em;
@@ -51,5 +54,25 @@ img {
 
 #GameName {
   font-size: larger;
-  color: black;
+  color: rgb(243, 230, 230);
+}
+
+body {
+  background-color: #40404e;
+}
+
+#footerText {
+  color: white;
+}
+
+#casinoName {
+  color: white;
+}
+
+#Loginbutton {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  color: #40404e;
+  background-color: rgb(36, 229, 36);
 }

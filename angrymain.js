@@ -28,7 +28,7 @@ Runner.run(Runner.create(), engine);
 // Create the walls (boundaries)
 const boundaries = [
   Bodies.rectangle(width / 2, 0, width, 20, { isStatic: true }),
-  Bodies.rectangle(width / 2, height, width, 20, { isStatic: true }),
+  // Bodies.rectangle(width / 2, height, width, 20, { isStatic: true }),
   Bodies.rectangle(0, height / 2, 20, height, { isStatic: true }),
   Bodies.rectangle(width, height / 2, 20, height, { isStatic: true }),
 ];
@@ -78,12 +78,12 @@ for (let i = 0; i < slotValues.length; i++) {
 document.body.style.backgroundColor = "#1b2b3a";
 
 // // Make the balls drop automatically (uncomment if needed)
-// setInterval(() => {
-//   const ball = Bodies.circle(centerX, 25, 6, {
-//     render: { fillStyle: "red" },
-//   }); // White balls
-//   Composite.add(world, ball);
-// }, 10);
+setInterval(() => {
+  const ball = Bodies.circle(centerX, 25, 6, {
+    render: { fillStyle: "red" },
+  });
+  Composite.add(world, ball);
+}, 10);
 
 //ball config
 const ballRadius = 6;
