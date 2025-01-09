@@ -80,7 +80,7 @@ setInterval(() => {
   score++;
   scoreDisplay.textContent = `Score: ${score}`;
   if (x === 0) {
-    crash();
+    // crash();
   }
 }, 500);
 
