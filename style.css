@@ -141,11 +141,24 @@ body {
   background-color: #1f4627;
 }
 
-#Games {
+#games {
   height: 2.5em;
   width: 6em;
   background-color: #32723e;
+  color: white;
 }
-#Games:hover {
+#games:hover {
   background-color: #1f4627;
+}
+
+#logo {
+  height: 8em;
+  width: 12em;
+  background-image: url(logo.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  left: 13em;
+  position: absolute;
+  border-radius: 5em;
 }
