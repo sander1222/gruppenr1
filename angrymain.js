@@ -28,7 +28,7 @@ Runner.run(Runner.create(), engine);
 // Create the walls (boundaries)
 const boundaries = [
   Bodies.rectangle(width / 2, 0, width, 20, { isStatic: true }),
-  Bodies.rectangle(width / 2, height, width, 20, { isStatic: true }),
+  // Bodies.rectangle(width / 2, height, width, 20, { isStatic: true }),
   Bodies.rectangle(0, height / 2, 20, height, { isStatic: true }),
   Bodies.rectangle(width, height / 2, 20, height, { isStatic: true }),
 ];
