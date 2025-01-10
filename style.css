@@ -8,7 +8,7 @@ header {
   height: 3em;
   padding-top: 1em;
   justify-content: center;
-  background-color: #32723e;
+  background: linear-gradient(to bottom left, #8a0c73 60%, #ff99cc 75%);
   /* background-image: linear-gradient(rgb(#83b644), rgba(255, 255, 255, 0)); */
   display: flex;
   height: 8em;
@@ -16,16 +16,16 @@ header {
 
 #miniHeader {
   display: flex;
-  background-color: #32723e;
+  background-color: #215988;
   height: 2.5em;
-  border: #030303;
-  border-style: solid;
-  border-width: 1px;
+  border-bottom: #030303;
+  /* border-style: solid; */
+  /* border-width: 1px; */
 }
 
 #miniHeaderButtons {
   display: flex;
-  background-color: #32723e;
+  background-color: #215988;
   justify-content: center;
   align-items: center;
   width: 20em;
@@ -33,7 +33,10 @@ header {
 
 footer {
   font-size: larger;
-  background-color: #3a3a38;
+  border-top-style: solid;
+  border-width: 2em;
+  border-color: #215988;
+  background: linear-gradient(to top right, #8a0c73 60%, #ff99cc 75%);
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -57,10 +60,11 @@ a {
 #GameBox {
   margin: 2em;
   padding: 1em;
-  height: 15em;
+  height: 16em;
   width: 15em;
   justify-items: center;
   border-radius: 5%;
+  background-color: #215988;
 }
 
 img {
@@ -71,19 +75,22 @@ img {
 
 #GameName {
   font-size: larger;
-  color: rgb(0, 0, 0);
+  color: #f1f14e;
 }
 
 body {
-  background-color: #ffffff;
+  background: linear-gradient(to bottom, #f1f379 37%, #f49416 100%);
+  background-attachment: fixed;
 }
 
 #footerText {
-  color: white;
+  color: #f1f14e;
 }
 
 #casinoName {
-  color: white;
+  color: #f1f14e;
+  font-family: sans-serif;
+  font-style: italic;
   position: absolute;
   left: 350px;
   top: 0.7em;
@@ -100,8 +107,8 @@ body {
 } */
 
 #Login {
-  color: #ffffff;
-  background-color: #32723e;
+  color: #f1f14e;
+  background-color: #db2caf;
   position: absolute;
   top: 3em;
   right: 60px;
@@ -111,12 +118,12 @@ body {
   transition: background-color 0.3s ease;
 }
 #Login:hover {
-  background-color: #1f4627;
+  background-color: #a01a7e;
 }
 
 #registerButton {
-  color: #030303;
-  background-color: #fdfa3f;
+  color: #f1f14e;
+  background-color: #db2caf;
   position: absolute;
   top: 3em;
   right: 150px;
@@ -127,38 +134,38 @@ body {
 }
 
 #registerButton:hover {
-  background-color: #b6b42f;
+  background-color: #a01a7e;
 }
 #slotsButton {
   height: 2.5em;
   width: 6em;
   transition: background-color 0.3s ease;
-  background-color: #32723e;
-  color: white;
+  background-color: #db2caf;
+  color: #f1f14e;
 }
 
 #slotsButton:hover {
-  background-color: #1f4627;
+  background-color: #a01a7e;
 }
 
 #games {
   height: 2.5em;
   width: 6em;
-  background-color: #32723e;
-  color: white;
+  background-color: #db2caf;
+  color: #f1f14e;
 }
 #games:hover {
-  background-color: #1f4627;
+  background-color: #a01a7e;
 }
 
 #logo {
   height: 8em;
-  width: 12em;
-  background-image: url(logo.webp);
+  width: 8em;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  left: 13em;
+  top: 0;
+  left: 6em;
   position: absolute;
-  border-radius: 5em;
+  /* border-radius: 5em; */
 }
