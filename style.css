@@ -112,6 +112,8 @@ body {
   position: absolute;
   top: 3em;
   right: 60px;
+  border: 1px #215988;
+  border-style: solid;
   border-radius: 5px;
   width: 70px;
   height: 40px;
@@ -127,6 +129,8 @@ body {
   position: absolute;
   top: 3em;
   right: 150px;
+  border: 1px #215988;
+  border-style: solid;
   border-radius: 5px;
   width: 85px;
   height: 40px;
@@ -142,6 +146,8 @@ body {
   transition: background-color 0.3s ease;
   background-color: #db2caf;
   color: #f1f14e;
+  border: 1px #215988;
+  border-style: solid;
 }
 
 #slotsButton:hover {
@@ -153,6 +159,8 @@ body {
   width: 6em;
   background-color: #db2caf;
   color: #f1f14e;
+  border: 1px #215988;
+  border-style: solid;
 }
 #games:hover {
   background-color: #a01a7e;
