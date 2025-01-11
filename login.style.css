@@ -1,0 +1,95 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace, sans-serif;
+}
+
+/* Body Styling */
+body {
+  background: linear-gradient(to bottom, #f1f379 37%, #f49416 100%);
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Main Container */
+#loginContainer {
+  background: linear-gradient(to top right, #8a0c73 60%, #ff99cc 75%);
+  border-radius: 10px;
+  padding: 2em;
+  width: 350px;
+  text-align: center;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Logo Section */
+#logoSection {
+  margin-bottom: 1.5em;
+}
+
+#casinoLogo {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 0.5em;
+}
+
+#loginTitle {
+  color: #f1f14e;
+  font-style: italic;
+  font-size: 24px;
+}
+
+/* Form Section */
+#formSection h2 {
+  color: #f1f14e;
+  margin-bottom: 1em;
+}
+
+label {
+  display: block;
+  text-align: left;
+  color: #fff;
+  margin-bottom: 0.5em;
+}
+
+input {
+  width: 100%;
+  padding: 0.8em;
+  margin-bottom: 1.5em;
+  border: 1px solid #215988;
+  border-radius: 5px;
+}
+
+#loginButton {
+  width: 100%;
+  padding: 0.8em;
+  background-color: #db2caf;
+  color: #f1f14e;
+  border: 1px solid #215988;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+#loginButton:hover {
+  background-color: #a01a7e;
+}
+
+#registerPrompt {
+  color: #fff;
+  margin-top: 1em;
+}
+
+#registerPrompt a {
+  color: #f1f14e;
+  text-decoration: underline;
+}
+
+#registerPrompt a:hover {
+  color: #db2caf;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Fraud Casino</title>
+    <link rel="stylesheet" href="login.style.css" />
+  </head>
+  <body>
+    <div id="loginContainer">
+      <div id="logoSection">
+        <img src="Casinologo.png" alt="Fraud Casino Logo" id="casinoLogo" />
+        <h1 id="loginTitle">Fraud Casino</h1>
+      </div>
+
+      <div id="formSection">
+        <h2>Login to Your Account</h2>
+        <form id="loginForm">
+          <label for="username">Username</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Enter your username"
+            required
+          />
+
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter your password"
+            required
+          />
+
+          <button type="submit" id="loginButton">Login</button>
+        </form>
+        <p id="registerPrompt">
+          Don't have an account?
+          <a href="index.html" id="registerLink">Register here</a>.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
